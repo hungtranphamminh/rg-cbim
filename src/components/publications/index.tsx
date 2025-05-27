@@ -97,7 +97,7 @@ export default function Publications({ publications }: PublicationsProps) {
           {/* search input */}
           <div className="sticky top-[60px] z-50">
             <div
-              className="relative w-fit bg-white
+              className="relative w-fit md:w-full bg-white
             border-b border-b-gray-700 flex items-center
             hover:scale-105 focus:scale-105 hover:shadow-lg focus:shadow-lg shadow-md
             transition-all duration-200 ease-in-out 
