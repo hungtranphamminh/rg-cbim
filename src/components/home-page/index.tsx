@@ -1,6 +1,5 @@
 import Image from "next/image";
 import backgroundImage from "@images/home/bg.png";
-import AllStuffs from "./all-stuffs";
 import PiInfo from "./pi-info";
 import News from "./news";
 

@@ -1,6 +1,4 @@
-import Link from "next/link";
 import Image from "next/image";
-import arrowIcon from "@images/shared/right-arrow.svg";
 
 interface Person {
   id: string;

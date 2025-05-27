@@ -2,8 +2,8 @@ import { ThemeProvider } from "next-themes";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, PT_Serif, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+
+import FullPagePopupWrapper from "@/components/page-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,9 +43,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${ptSerif.variable} ${sourceSansPro.className} antialiased relative`}
       >
         <ThemeProvider>
-          <Header />
-          {children}
-          <Footer />
+          <FullPagePopupWrapper>{children}</FullPagePopupWrapper>
         </ThemeProvider>
       </body>
     </html>
