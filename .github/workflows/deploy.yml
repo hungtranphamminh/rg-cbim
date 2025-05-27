@@ -23,7 +23,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "18"
-          cache: "npm"
+          cache: "yarn"
+
+      - name: Enable Yarn
+        run: corepack enable
+
+      - name: Set Yarn version
+        run: yarn set version stable
 
       - name: Create Python virtual environment
         run: |
@@ -41,10 +47,10 @@ jobs:
           python ./scripts/citations/cite.py
 
       - name: Install Node.js dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
 
       - name: Build Next.js app
-        run: npm run build
+        run: yarn build
 
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v25
