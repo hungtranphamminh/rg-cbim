@@ -66,7 +66,7 @@ export default function ProfileCard({ person }: ProfileCardProps) {
           </div>
 
           {/* Link to personal page */}
-          <div
+          {/* <div
             className="rounded-full size-16 bg-white absolute z-[99] top-[140px] left-[150px]
           group-hover:size-[72px] transition-all duration-300 ease-in-out
           flex items-center justify-center hover:shadow-lg
@@ -85,12 +85,12 @@ export default function ProfileCard({ person }: ProfileCardProps) {
                 className="-ml-1 group-hover:ml-1 transition-all duration-300 ease-in-out"
               />
             </Link>
-          </div>
+          </div> */}
         </div>
 
         {/* Profile info */}
         <div
-          className="absolute bottom-2 left-2 flex flex-col items-start justify-end z-[99] 
+          className="absolute bottom-2 sm:left-2 flex flex-col items-start justify-end z-[99] 
         group-hover:scale-105 group-hover:bottom-4 group-hover:left-4 transition-all duration-300 ease-in-out
         
         "
@@ -99,7 +99,6 @@ export default function ProfileCard({ person }: ProfileCardProps) {
           <h3
             className="text-lg font-semibold text-gray-900 mb-2 leading-none 
           group-hover:text-white transition-all duration-300 ease-in-out
-          
           "
           >
             {person.name}

@@ -33,7 +33,11 @@ export default function Members() {
             {groupedPeople.map((group) => (
               <div key={group.position} className="space-y-6">
                 {/* Position Header */}
-                <div className="border-b border-gray-200 flex items-center justify-start gap-4">
+                <div
+                  className="border-b border-gray-200 flex md:flex-row flex-col justify-start
+                items-start md:items-center
+                md:gap-4 gap-1"
+                >
                   <h3 className="text-2xl font-semibold font-pt-serif ">
                     {group.position}
                   </h3>
@@ -44,7 +48,7 @@ export default function Members() {
                 </div>
 
                 {/* Profile Cards Grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                   {group.people.map((person) => (
                     <ProfileCard key={person.id} person={person} />
                   ))}
