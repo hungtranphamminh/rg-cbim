@@ -6,17 +6,6 @@ export default function News() {
       <h2 className="xl:text-3xl text-xl font-bold tracking-wide font-pt-serif">
         Upcoming News and Events
       </h2>
-      <div className="mt-2">
-        Stay updated with the latest research breakthroughs, publications, and
-        events from our lab. We are committed to sharing our findings and
-        contributing to the global scientific community.
-      </div>
-
-      <div className="mt-2 mb-8">
-        Stay updated with the latest research breakthroughs, publications, and
-        events from our lab. We are committed to sharing our findings and
-        contributing to the global scientific community.
-      </div>
 
       <div className="space-y-6">
         {upcomingEvents.map((event, index) => (

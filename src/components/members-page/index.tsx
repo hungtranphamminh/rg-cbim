@@ -5,7 +5,6 @@ import { mockPeople, groupPeopleByPosition } from "@/utils/mock-data/members";
 
 export default function Members() {
   const groupedPeople = groupPeopleByPosition(mockPeople);
-
   return (
     <main className="w-full bg-white relative">
       <div className="w-full flex flex-col items-center">

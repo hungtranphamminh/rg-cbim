@@ -28,18 +28,26 @@ export default function Home() {
           <div
             className=" font-bold font-pt-serif w-full
           xl:max-w-[1140px] 2xl:max-w-[1320px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px]
-          absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-white"
+          absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-white
+          "
           >
-            <div className="md:w-[65%] w-full flex flex-col gap-4">
-              <div className="text-8xl">About CBIM</div>
+            <div
+              className="md:w-[65%] w-full flex flex-col gap-4
+            md:px-0 px-6
+            "
+            >
+              <div className="2xl:text-8xl xl:text-7xl lg:text-6xl text-4xl">
+                {" "}
+                CBIM
+              </div>
 
               <div>
                 The Center for Computational Biomedicine Imaging and Modeling
                 (CBIM) at Rutgers University is a premier research center
-                focused on biomedicine, computer vision, and AI. Founded in
-                2001, CBIM drives innovation through interdisciplinary
-                collaboration and is supported by major federal agencies and
-                leading academic and industry partners.
+                focused on biomedicine, computer vision, and AI. CBIM drives
+                innovation through interdisciplinary collaboration and is
+                supported by major federal agencies and leading academic and
+                industry partners.
               </div>
             </div>
           </div>
@@ -49,7 +57,7 @@ export default function Home() {
         <div
           className="w-full 
           xl:max-w-[1140px] 2xl:max-w-[1320px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px]
-          pt-8 px-3 
+          pt-8 md:px-3 px-4 
         "
         >
           {/* Lab info */}
@@ -82,7 +90,7 @@ export default function Home() {
           <News />
 
           {/* All stuffs */}
-          <AllStuffs />
+          {/* <AllStuffs /> */}
         </div>
       </div>
     </main>

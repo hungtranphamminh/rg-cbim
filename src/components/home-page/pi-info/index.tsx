@@ -5,7 +5,12 @@ import redArrow from "@images/shared/red-arrow.svg";
 
 export default function PiInfo() {
   return (
-    <div className="w-full flex items-start justify-start xl:gap-20 my-10">
+    <div
+      className="w-full flex items-center justify-start xl:gap-20 lg:gap-10 gap-6 my-10
+      lg:flex-row flex-col lg:items-start
+
+    "
+    >
       {/* Pi profile image */}
       <div
         className="hover:shadow-md transition-shadow duration-200 
