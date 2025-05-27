@@ -39,7 +39,7 @@ export default function PiInfo() {
 
           {/* Profile info */}
           <div
-            className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-start justify-end z-[99] 
+            className="absolute -bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-start justify-end z-[99] 
         group-hover:scale-105 group-hover:bottom-4 transition-all duration-300 ease-in-out
         
         "
@@ -52,21 +52,30 @@ export default function PiInfo() {
             >
               {mockPiData.name}
             </h3>
-            {/* Position */}
-            <div
-              className="text-sm text-gray-600 mb-1 leading-none 
-          group-hover:text-gray-100 group-hover:text-lg transition-all duration-300 ease-in-out"
-            >
-              {mockPiData.position}
-            </div>
           </div>
         </div>
       </div>
 
       {/* Pi info */}
       <div>
-        <div className="text-3xl font-bold tracking-wide font-pt-serif">
-          Founder & Principal Investigator
+        <div className="px-3 py-1.5 mb-4 border-2 border-primary-red w-fit text-xl font-bold tracking-wide font-pt-serif">
+          Founder
+        </div>
+
+        {/* Name */}
+        <h2
+          className="text-3xl font-pt-serif font-semibold text-gray-900 mb-2 leading-none text-nowrap
+          transition-all duration-300 ease-in-out
+          "
+        >
+          {mockPiData.name}
+        </h2>
+        {/* Position */}
+        <div
+          className="text-sm text-gray-600 leading-none italic mb-2
+          group-hover:text-gray-100 group-hover:text-lg transition-all duration-300 ease-in-out"
+        >
+          {mockPiData.position}
         </div>
 
         <div className="w-full h-[1px] bg-gray-300 my-4"></div>
