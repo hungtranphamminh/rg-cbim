@@ -29,7 +29,7 @@ jobs:
         run: corepack enable
 
       - name: Set Yarn version
-        run: yarn set version stable
+        run: yarn set version 1.22.19
 
       - name: Create Python virtual environment
         run: |
