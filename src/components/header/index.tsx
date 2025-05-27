@@ -35,6 +35,10 @@ export default function Header() {
           <Link
             key={route.name}
             href={route.path}
+            /* TODO: enable after page implemented */
+            style={{
+              pointerEvents: route.path === "/joining-us" ? "none" : "auto",
+            }}
             className="ml-8 text-lg font-bold tracking-wider h-full "
           >
             <div className="relative h-full flex items-center justify-center group">
