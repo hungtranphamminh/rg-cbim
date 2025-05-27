@@ -97,11 +97,12 @@ export default function Publications({ publications }: PublicationsProps) {
           {/* search input */}
           <div className="sticky top-[60px] z-50">
             <div
-              className="relative w-full bg-white
-            border-b border-b-gray-700 flex items-center gap-10
+              className="relative w-fit bg-white
+            border-b border-b-gray-700 flex items-center
             hover:scale-105 focus:scale-105 hover:shadow-lg focus:shadow-lg shadow-md
-            transition-all duration-200 ease-in-out px-3 py-2
-            
+            transition-all duration-200 ease-in-out 
+            md:px-3 md:py-2 px-1.5 py-1
+            md:gap-10 gap-4 
             "
             >
               <input
@@ -110,8 +111,8 @@ export default function Publications({ publications }: PublicationsProps) {
                 defaultValue={currentSearch}
                 onChange={handleSearchChange}
                 placeholder="Search Publications"
-                className="w-full px-4 pt-4 pb-6   
-                focus:outline-none text-xl tracking-wider
+                className="w-full px-4 pt-4 md:pb-6 pb-4   
+                focus:outline-none md:text-xl text-base tracking-wider
                 relative z-10
                 "
               />
@@ -119,15 +120,13 @@ export default function Publications({ publications }: PublicationsProps) {
               <Image
                 src={searchIcon}
                 alt="Search Icon"
-                className=""
-                width={30}
-                height={30}
+                className="size-5 md:size-8"
               />
             </div>
           </div>
 
           {/* publications list */}
-          <div className="mt-8 pb-20 px-3 w-full flex flex-col gap-4">
+          <div className="mt-8 pb-20 md:px-3 w-full flex flex-col gap-4">
             {[...filteredPublications].toReversed().map((yearGroup) => (
               <div
                 key={yearGroup.year}
@@ -141,9 +140,9 @@ export default function Publications({ publications }: PublicationsProps) {
                 "
                 >
                   <div
-                    className=" flex items-center gap-0 text-xl leading-none font-bold 
+                    className=" flex items-center gap-0 md:text-xl text-base leading-none font-bold 
                   text-black bg-white border-2 border-primary-red                  
-                   tracking-wider h-10 px-4"
+                   tracking-wider h-10 md:px-4 px-1"
                   >
                     <div>{yearGroup.year}</div>
                   </div>
